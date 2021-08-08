@@ -1,16 +1,19 @@
+
 import React from 'react';
 
 
-
 class Header extends React.Component {
-    render() {
-        return (
-            <div>
-               <h1>Title</h1>
-            </div>
-        );
-    }
+  render() {
+    return (
+
+
+      <h1>Horned Beasts</h1>
+
+
+
+    );
+
+  }
 }
 
 export default Header;
-
