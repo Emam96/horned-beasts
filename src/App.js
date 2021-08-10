@@ -20,17 +20,28 @@ class App extends React.Component {
     };
   }
 
-  showModal = (title) => {
-    let beasts = dataForMap.find((beast) => {
+///////////////////////////////////////////////////////////////////////////
+
+  showModal = title => {
+    let beasts = dataForMap.find( beast => {
       if (beast.title === title) {
         return beast;
       }
     });
+
+
+    ///////////////////////////////////////////////////////////////
+    
+    
     this.setState({
       beastList: beasts,
       show: true,
     });
   };
+
+
+
+/////////////////////////////////////////////////////////////////////
 
   handleClose = () => {
     this.setState({
@@ -39,7 +50,7 @@ class App extends React.Component {
     });
   };
 
-
+//////////////////////////////////////////////////////////////////
 
   render() {
     return (
