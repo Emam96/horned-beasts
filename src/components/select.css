@@ -1,0 +1,21 @@
+.modal-content {
+
+
+    /* border:solid tomato; */
+ margin: 0rem auto;
+
+}
+
+img {
+
+width:350px;
+height:350px;
+
+}
+
+.modal-header {
+
+flex-direction: column;
+
+
+}

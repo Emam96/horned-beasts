@@ -18,26 +18,35 @@ class HornedBeast extends React.Component {
     });
   };
 
+  
+  
+  showModal = () => {
+    this.props.showModal(this.props.title);
+  };
+
+
   render() {
     return (
       <>
-        <Card style={{ width: "40rem" }}>
-          <Card.Title>{this.props.title}</Card.Title>
+        <Card  style={{ width: "40rem" }}>
+          <Card.Title onClick={this.showModal}>{this.props.title}</Card.Title>
           <Card.Img
+          onClick={this.showModal}
             variant="top"
             src={this.props.imageUrl}
             alt="horned"
             title="horned"
           />
-          <Card.Body>
+          <Card.Body onClick={this.showModal}>
             <Card.Text># of votes ❤ = {this.state.votes}</Card.Text>
             <Card.Text>{this.props.description}</Card.Text>
             
 
-            <Button onClick={this.increaseVotes} variant="primary">
+            
+          </Card.Body>
+          <Button onClick={this.increaseVotes} variant="primary">
               VOTE
             </Button>
-          </Card.Body>
         </Card>
       </>
     );
