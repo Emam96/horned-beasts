@@ -1,7 +1,7 @@
 import React from "react";
 import HornedBeast from "./HornedBeasts";
 import "./Main.css";
-let dataForMap = require ("./dataForMap.json");
+import dataForMap from "./dataForMap.json";
 
 
 
@@ -11,7 +11,19 @@ let dataForMap = require ("./dataForMap.json");
 
 class Main extends React.Component {
 
+ 
   
+  
+
+
+//   showModal = () =>{
+//     this.setState({
+//       show: true
+//     })
+// }
+
+
+
   render() {
     return (
       <>
@@ -23,6 +35,7 @@ class Main extends React.Component {
               title={item.title}
               imageUrl={item.image_url}
               description={item.description}
+              showModal={this.props.showModal}
             />
           );
         })}
